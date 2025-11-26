@@ -1,4 +1,4 @@
-import { test, expect } from '../../fixtures/test-fixtures';
+import { test, expect } from '../fixtures/test-fixtures';
 
 test.describe('APIEndpoints', () => {
   test('TC-APIEndpoints-008: Verify /api/share/save endpoint creates share token', async ({ apiHelpers }) => {
@@ -16,7 +16,6 @@ test.describe('APIEndpoints', () => {
 
   test('TC-APIEndpoints-009: Verify /api/share/[token] endpoint returns saved state', async ({ apiHelpers }) => {
     const testState = {
-      const testState = {
       basemap: 'street',
       analysisMode: 'point',
       compareMode: 'points',

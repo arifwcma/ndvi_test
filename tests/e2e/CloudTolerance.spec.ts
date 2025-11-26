@@ -1,4 +1,4 @@
-import { test, expect } from '../../fixtures/test-fixtures';
+import { test, expect } from '../fixtures/test-fixtures';
 
 test.describe('CloudTolerance', () => {
   test.beforeEach(async ({ page }) => {

@@ -1,4 +1,4 @@
-import { test, expect } from '../../fixtures/test-fixtures';
+import { test, expect } from '../fixtures/test-fixtures';
 
 test.describe('BasemapSwitching', () => {
   test.beforeEach(async ({ page }) => {

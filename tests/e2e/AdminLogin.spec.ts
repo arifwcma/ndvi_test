@@ -1,4 +1,4 @@
-import { test, expect } from '../../fixtures/test-fixtures';
+import { test, expect } from '../fixtures/test-fixtures';
 
 test.describe('AdminLogin', () => {
   test('TC-AdminLogin-001: Navigate to /admin and verify redirect to /admin/login', async ({ page }) => {

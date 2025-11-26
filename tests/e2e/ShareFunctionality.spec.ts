@@ -1,4 +1,4 @@
-import { test, expect } from '../../fixtures/test-fixtures';
+import { test, expect } from '../fixtures/test-fixtures';
 
 test.describe('ShareFunctionality', () => {
   test.beforeEach(async ({ page }) => {
@@ -14,14 +14,6 @@ test.describe('ShareFunctionality', () => {
     
     const popup = page.locator('div').filter({ hasText: 'Share Link' }).first();
     await expect(popup).toBeVisible({ timeout: 10000 });
-  });
-
-    await page.waitForSelector('input[type="text"][readonly]', { state: 'visible', timeout: 10000 });
-    
-    await page.waitForFunction(() => {
-      const input = document.querySelector('input[type="text"][readonly]') as HTMLInputElement;
-      return input && input.value.length > 0;
-    }, { timeout: 10000 });
   });
 
   test('TC-ShareFunctionality-002: Verify share URL is generated', async ({ page }) => {
