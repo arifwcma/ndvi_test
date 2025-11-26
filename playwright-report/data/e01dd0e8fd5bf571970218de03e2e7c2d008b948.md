@@ -1,0 +1,155 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - link "Share" [ref=e5] [cursor=pointer]:
+        - /url: "#"
+      - generic [ref=e7]:
+        - generic [ref=e8]:
+          - heading "Share Link" [level=3] [ref=e9]
+          - button "×" [ref=e10] [cursor=pointer]
+        - textbox [active] [ref=e12]: http://localhost:3000/?share=64975845-3886-44ad-8ae6-99f55d9eec3e
+        - button "Copy URL" [ref=e13] [cursor=pointer]
+      - generic [ref=e14]:
+        - generic [ref=e15]: "Basemap:"
+        - combobox [ref=e16]:
+          - option "Street" [selected]
+          - option "Satellite"
+          - option "Topographic"
+      - generic [ref=e17]:
+        - generic [ref=e18]: "Analyse:"
+        - combobox [ref=e19]:
+          - option "Point" [selected]
+          - option "Area"
+      - generic [ref=e20]:
+        - generic [ref=e21]: "Compare:"
+        - combobox [ref=e22]:
+          - option "Points" [selected]
+          - option "Months"
+      - generic [ref=e23]:
+        - generic [ref=e24]: "Cloud tolerance (%):"
+        - combobox [ref=e25] [cursor=pointer]:
+          - option "0"
+          - option "1"
+          - option "2"
+          - option "3"
+          - option "4"
+          - option "5"
+          - option "6"
+          - option "7"
+          - option "8"
+          - option "9"
+          - option "10"
+          - option "11"
+          - option "12"
+          - option "13"
+          - option "14"
+          - option "15"
+          - option "16"
+          - option "17"
+          - option "18"
+          - option "19"
+          - option "20"
+          - option "21"
+          - option "22"
+          - option "23"
+          - option "24"
+          - option "25"
+          - option "26"
+          - option "27"
+          - option "28"
+          - option "29"
+          - option "30"
+          - option "31"
+          - option "32"
+          - option "33"
+          - option "34"
+          - option "35"
+          - option "36"
+          - option "37"
+          - option "38"
+          - option "39"
+          - option "40"
+          - option "41"
+          - option "42"
+          - option "43"
+          - option "44"
+          - option "45"
+          - option "46"
+          - option "47"
+          - option "48"
+          - option "49"
+          - option "50" [selected]
+          - option "51"
+          - option "52"
+          - option "53"
+          - option "54"
+          - option "55"
+          - option "56"
+          - option "57"
+          - option "58"
+          - option "59"
+          - option "60"
+          - option "61"
+          - option "62"
+          - option "63"
+          - option "64"
+          - option "65"
+          - option "66"
+          - option "67"
+          - option "68"
+          - option "69"
+          - option "70"
+          - option "71"
+          - option "72"
+          - option "73"
+          - option "74"
+          - option "75"
+          - option "76"
+          - option "77"
+          - option "78"
+          - option "79"
+          - option "80"
+          - option "81"
+          - option "82"
+          - option "83"
+          - option "84"
+          - option "85"
+          - option "86"
+          - option "87"
+          - option "88"
+          - option "89"
+          - option "90"
+          - option "91"
+          - option "92"
+          - option "93"
+          - option "94"
+          - option "95"
+          - option "96"
+          - option "97"
+          - option "98"
+          - option "99"
+          - option "100"
+    - generic [ref=e27]:
+      - generic:
+        - generic:
+          - img
+      - generic:
+        - generic [ref=e29]:
+          - button "Zoom in" [ref=e30] [cursor=pointer]: +
+          - button "Zoom out" [ref=e31] [cursor=pointer]: −
+        - generic [ref=e32]:
+          - link "Leaflet" [ref=e33] [cursor=pointer]:
+            - /url: https://leafletjs.com
+            - img [ref=e34]
+            - text: Leaflet
+          - text: "| ©"
+          - link "OpenStreetMap" [ref=e38] [cursor=pointer]:
+            - /url: https://www.openstreetmap.org/copyright
+  - button "Open Next.js Dev Tools" [ref=e45] [cursor=pointer]:
+    - img [ref=e46]
+  - alert [ref=e49]
+  - generic [ref=e50]: Click on the map to place a point
+```
