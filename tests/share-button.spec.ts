@@ -1,7 +1,9 @@
 import { test, expect } from './fixtures/test-fixtures';
 
 test.describe('ShareFunctionality', () => {
-  test('should open popup with share link on click', async ({ page }) => {
+  test('should open popup with share link on click', async ({ page, context }) => {
+    await context.grantPermissions(['clipboard-read', 'clipboard-write']);
+    
     await page.goto('/');
     
     await page.waitForLoadState('networkidle');
@@ -35,6 +37,10 @@ test.describe('ShareFunctionality', () => {
     
     const copyButton = page.locator('button').filter({ hasText: /Copy URL|Copied!/ });
     await expect(copyButton).toBeVisible();
+    
+    page.on('dialog', async dialog => {
+      await dialog.accept();
+    });
     
     await copyButton.click();
     
